@@ -400,7 +400,7 @@ exports[`non-styled: shallow 1`] = `<div />`;
 exports[`null 1`] = `null`;
 
 exports[`referring to other components: mount 1`] = `
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -414,18 +414,18 @@ exports[`referring to other components: mount 1`] = `
   color: palevioletred;
 }
 
-.c2 {
+.c0 {
   -webkit-transition: fill 0.25s;
   transition: fill 0.25s;
   width: 48px;
   height: 48px;
 }
 
-.c0:hover .c2 {
+.c5:hover .c0 {
   fill: rebeccapurple;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -437,17 +437,17 @@ exports[`referring to other components: mount 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
+.c4::before {
   content: '◀';
   margin: 0 10px;
 }
 
-.sc-fzXfLU .c4 {
+.sc-fzXfLU .c2 {
   color: yellow;
   background-color: green;
 }
 
-.sc-fzXfLU .c5 {
+.sc-fzXfLU .c1 {
   color: yellow;
   background-color: red;
 }
@@ -456,24 +456,24 @@ exports[`referring to other components: mount 1`] = `
   href="#"
 >
   <a
-    className="c0 c1"
+    className="c5 c3"
     href="#"
   >
     <styled.svg>
       <svg
-        className="c2"
+        className="c0"
       />
     </styled.svg>
     <styled.span>
       <span
-        className="c3"
+        className="c4"
       >
         Hovering my parent changes my style!
       </span>
     </styled.span>
     <styled.span>
       <span
-        className="c4"
+        className="c2"
       >
         I should be green
       </span>
@@ -482,7 +482,7 @@ exports[`referring to other components: mount 1`] = `
       error={true}
     >
       <span
-        className="c5"
+        className="c1"
       >
         I should be red
       </span>
@@ -492,7 +492,7 @@ exports[`referring to other components: mount 1`] = `
 `;
 
 exports[`referring to other components: react-test-renderer 1`] = `
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -506,18 +506,18 @@ exports[`referring to other components: react-test-renderer 1`] = `
   color: palevioletred;
 }
 
-.c2 {
+.c0 {
   -webkit-transition: fill 0.25s;
   transition: fill 0.25s;
   width: 48px;
   height: 48px;
 }
 
-.c0:hover .c2 {
+.c5:hover .c0 {
   fill: rebeccapurple;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -529,40 +529,40 @@ exports[`referring to other components: react-test-renderer 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
+.c4::before {
   content: '◀';
   margin: 0 10px;
 }
 
-.sc-fzXfLU .c4 {
+.sc-fzXfLU .c2 {
   color: yellow;
   background-color: green;
 }
 
-.sc-fzXfLU .c5 {
+.sc-fzXfLU .c1 {
   color: yellow;
   background-color: red;
 }
 
 <a
-  className="c0 c1"
+  className="c5 c3"
   href="#"
 >
   <svg
-    className="c2"
+    className="c0"
   />
   <span
-    className="c3"
+    className="c4"
   >
     Hovering my parent changes my style!
   </span>
   <span
-    className="c4"
+    className="c2"
   >
     I should be green
   </span>
   <span
-    className="c5"
+    className="c1"
   >
     I should be red
   </span>
@@ -570,7 +570,7 @@ exports[`referring to other components: react-test-renderer 1`] = `
 `;
 
 exports[`referring to other components: react-testing-library 1`] = `
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -584,18 +584,18 @@ exports[`referring to other components: react-testing-library 1`] = `
   color: palevioletred;
 }
 
-.c2 {
+.c0 {
   -webkit-transition: fill 0.25s;
   transition: fill 0.25s;
   width: 48px;
   height: 48px;
 }
 
-.c0:hover .c2 {
+.c5:hover .c0 {
   fill: rebeccapurple;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -607,40 +607,40 @@ exports[`referring to other components: react-testing-library 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
+.c4::before {
   content: '◀';
   margin: 0 10px;
 }
 
-.sc-fzXfLU .c4 {
+.sc-fzXfLU .c2 {
   color: yellow;
   background-color: green;
 }
 
-.sc-fzXfLU .c5 {
+.sc-fzXfLU .c1 {
   color: yellow;
   background-color: red;
 }
 
 <a
-  class="c0 c1"
+  class="c5 c3"
   href="#"
 >
   <svg
-    class="c2"
+    class="c0"
   />
   <span
-    class="c3"
+    class="c4"
   >
     Hovering my parent changes my style!
   </span>
   <span
-    class="c4"
+    class="c2"
   >
     I should be green
   </span>
   <span
-    class="c5"
+    class="c1"
   >
     I should be red
   </span>
@@ -814,7 +814,7 @@ html.test .c0 {
 `;
 
 exports[`theming: mount 1`] = `
-.c0 {
+.c1 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -823,7 +823,7 @@ exports[`theming: mount 1`] = `
   border: 2px solid palevioletred;
 }
 
-.c1 {
+.c0 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -841,7 +841,7 @@ exports[`theming: mount 1`] = `
     }
   >
     <button
-      className="c0"
+      className="c1"
     >
       Normal
     </button>
@@ -861,7 +861,7 @@ exports[`theming: mount 1`] = `
       }
     >
       <button
-        className="c1"
+        className="c0"
       >
         Themed
       </button>
@@ -871,7 +871,7 @@ exports[`theming: mount 1`] = `
 `;
 
 exports[`theming: react-test-renderer 1`] = `
-.c0 {
+.c1 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -880,7 +880,7 @@ exports[`theming: react-test-renderer 1`] = `
   border: 2px solid palevioletred;
 }
 
-.c1 {
+.c0 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -891,12 +891,12 @@ exports[`theming: react-test-renderer 1`] = `
 
 <div>
   <button
-    className="c0"
+    className="c1"
   >
     Normal
   </button>
   <button
-    className="c1"
+    className="c0"
   >
     Themed
   </button>
@@ -904,7 +904,7 @@ exports[`theming: react-test-renderer 1`] = `
 `;
 
 exports[`theming: react-testing-library 1`] = `
-.c0 {
+.c1 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -913,7 +913,7 @@ exports[`theming: react-testing-library 1`] = `
   border: 2px solid palevioletred;
 }
 
-.c1 {
+.c0 {
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -924,12 +924,12 @@ exports[`theming: react-testing-library 1`] = `
 
 <div>
   <button
-    class="c0"
+    class="c1"
   >
     Normal
   </button>
   <button
-    class="c1"
+    class="c0"
   >
     Themed
   </button>

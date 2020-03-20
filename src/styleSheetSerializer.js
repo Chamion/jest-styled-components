@@ -115,7 +115,7 @@ module.exports = {
     let classNames = [...getClassNames(nodes)];
     classNames = filterClassNames(classNames, hashes);
 
-    const style = getStyle(classNames);
+    const style = getStyle(classNames.sort());
     const classNamesToReplace = getClassNamesFromSelectorsByHashes(classNames, hashes);
     const code = print(val);
 
