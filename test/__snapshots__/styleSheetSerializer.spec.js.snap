@@ -400,6 +400,13 @@ exports[`non-styled: shallow 1`] = `<div />`;
 exports[`null 1`] = `null`;
 
 exports[`referring to other components: mount 1`] = `
+.c2 {
+  -webkit-transition: fill 0.25s;
+  transition: fill 0.25s;
+  width: 48px;
+  height: 48px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -414,15 +421,9 @@ exports[`referring to other components: mount 1`] = `
   color: palevioletred;
 }
 
-.c2 {
-  -webkit-transition: fill 0.25s;
-  transition: fill 0.25s;
-  width: 48px;
-  height: 48px;
-}
-
-.c0:hover .c2 {
-  fill: rebeccapurple;
+.c3::before {
+  content: '◀';
+  margin: 0 10px;
 }
 
 .c3 {
@@ -437,19 +438,18 @@ exports[`referring to other components: mount 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
-  content: '◀';
-  margin: 0 10px;
-}
-
-.sc-fzXfLU .c4 {
-  color: yellow;
-  background-color: green;
+.c0:hover .c2 {
+  fill: rebeccapurple;
 }
 
 .sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
+}
+
+.sc-fzXfLU .c4 {
+  color: yellow;
+  background-color: green;
 }
 
 <styled.a
@@ -492,6 +492,13 @@ exports[`referring to other components: mount 1`] = `
 `;
 
 exports[`referring to other components: react-test-renderer 1`] = `
+.c2 {
+  -webkit-transition: fill 0.25s;
+  transition: fill 0.25s;
+  width: 48px;
+  height: 48px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -506,15 +513,9 @@ exports[`referring to other components: react-test-renderer 1`] = `
   color: palevioletred;
 }
 
-.c2 {
-  -webkit-transition: fill 0.25s;
-  transition: fill 0.25s;
-  width: 48px;
-  height: 48px;
-}
-
-.c0:hover .c2 {
-  fill: rebeccapurple;
+.c3::before {
+  content: '◀';
+  margin: 0 10px;
 }
 
 .c3 {
@@ -529,19 +530,18 @@ exports[`referring to other components: react-test-renderer 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
-  content: '◀';
-  margin: 0 10px;
-}
-
-.sc-fzXfLU .c4 {
-  color: yellow;
-  background-color: green;
+.c0:hover .c2 {
+  fill: rebeccapurple;
 }
 
 .sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
+}
+
+.sc-fzXfLU .c4 {
+  color: yellow;
+  background-color: green;
 }
 
 <a
@@ -570,6 +570,13 @@ exports[`referring to other components: react-test-renderer 1`] = `
 `;
 
 exports[`referring to other components: react-testing-library 1`] = `
+.c2 {
+  -webkit-transition: fill 0.25s;
+  transition: fill 0.25s;
+  width: 48px;
+  height: 48px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -584,15 +591,9 @@ exports[`referring to other components: react-testing-library 1`] = `
   color: palevioletred;
 }
 
-.c2 {
-  -webkit-transition: fill 0.25s;
-  transition: fill 0.25s;
-  width: 48px;
-  height: 48px;
-}
-
-.c0:hover .c2 {
-  fill: rebeccapurple;
+.c3::before {
+  content: '◀';
+  margin: 0 10px;
 }
 
 .c3 {
@@ -607,19 +608,18 @@ exports[`referring to other components: react-testing-library 1`] = `
   line-height: 1.2;
 }
 
-.c3::before {
-  content: '◀';
-  margin: 0 10px;
-}
-
-.sc-fzXfLU .c4 {
-  color: yellow;
-  background-color: green;
+.c0:hover .c2 {
+  fill: rebeccapurple;
 }
 
 .sc-fzXfLU .c5 {
   color: yellow;
   background-color: red;
+}
+
+.sc-fzXfLU .c4 {
+  color: yellow;
+  background-color: green;
 }
 
 <a
@@ -660,18 +660,18 @@ exports[`shallow with theme 1`] = `
 `;
 
 exports[`supported css: mount 1`] = `
-.c0 {
-  padding: 2em 1em;
-  background: papayawhip;
+.c0 > p {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:hover {
   background: palevioletred;
 }
 
-.c0 > p {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c0 {
+  padding: 2em 1em;
+  background: papayawhip;
 }
 
 html.test .c0 {
@@ -700,18 +700,18 @@ html.test .c0 {
 `;
 
 exports[`supported css: react-test-renderer 1`] = `
-.c0 {
-  padding: 2em 1em;
-  background: papayawhip;
+.c0 > p {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:hover {
   background: palevioletred;
 }
 
-.c0 > p {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c0 {
+  padding: 2em 1em;
+  background: papayawhip;
 }
 
 html.test .c0 {
@@ -738,18 +738,18 @@ html.test .c0 {
 `;
 
 exports[`supported css: react-testing-library 1`] = `
-.c0 {
-  padding: 2em 1em;
-  background: papayawhip;
+.c0 > p {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:hover {
   background: palevioletred;
 }
 
-.c0 > p {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c0 {
+  padding: 2em 1em;
+  background: papayawhip;
 }
 
 html.test .c0 {
@@ -776,18 +776,18 @@ html.test .c0 {
 `;
 
 exports[`supported css: shallow 1`] = `
-.c0 {
-  padding: 2em 1em;
-  background: papayawhip;
+.c0 > p {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:hover {
   background: palevioletred;
 }
 
-.c0 > p {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c0 {
+  padding: 2em 1em;
+  background: papayawhip;
 }
 
 html.test .c0 {
@@ -814,15 +814,6 @@ html.test .c0 {
 `;
 
 exports[`theming: mount 1`] = `
-.c0 {
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-}
-
 .c1 {
   font-size: 1em;
   margin: 1em;
@@ -830,6 +821,15 @@ exports[`theming: mount 1`] = `
   border-radius: 3px;
   color: mediumseagreen;
   border: 2px solid mediumseagreen;
+}
+
+.c0 {
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  color: palevioletred;
+  border: 2px solid palevioletred;
 }
 
 <div>
@@ -871,15 +871,6 @@ exports[`theming: mount 1`] = `
 `;
 
 exports[`theming: react-test-renderer 1`] = `
-.c0 {
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-}
-
 .c1 {
   font-size: 1em;
   margin: 1em;
@@ -887,6 +878,15 @@ exports[`theming: react-test-renderer 1`] = `
   border-radius: 3px;
   color: mediumseagreen;
   border: 2px solid mediumseagreen;
+}
+
+.c0 {
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  color: palevioletred;
+  border: 2px solid palevioletred;
 }
 
 <div>
@@ -904,15 +904,6 @@ exports[`theming: react-test-renderer 1`] = `
 `;
 
 exports[`theming: react-testing-library 1`] = `
-.c0 {
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-}
-
 .c1 {
   font-size: 1em;
   margin: 1em;
@@ -920,6 +911,15 @@ exports[`theming: react-testing-library 1`] = `
   border-radius: 3px;
   color: mediumseagreen;
   border: 2px solid mediumseagreen;
+}
+
+.c0 {
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  color: palevioletred;
+  border: 2px solid palevioletred;
 }
 
 <div>

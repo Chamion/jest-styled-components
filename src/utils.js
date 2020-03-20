@@ -17,14 +17,16 @@ const resetStyleSheet = () => {
 const getHTML = () => (isServer() ? new ServerStyleSheet().getStyleTags() : masterSheet.toString());
 
 const extract = regex => {
-  let style = '';
-  let matches;
+  const matches = [];
 
-  while ((matches = regex.exec(getHTML())) !== null) {
-    style += `${matches[1]} `;
+  const html = getHTML();
+  let newestMatch = regex.exec(html);
+  while (newestMatch !== null) {
+    matches.push(newestMatch[1]);
+    newestMatch = regex.exec(html);
   }
 
-  return style.trim();
+  return matches.sort().join(' ');
 };
 
 const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
